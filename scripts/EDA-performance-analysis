@@ -223,6 +223,6 @@ CASE WHEN lifespan >= 12 and total_spending > 5000 THEN 'VIP'
      END customer_segment
 FROM customer_spending) t
 GROUP BY customer_segment
-
+ORDER BY total_customers DESC;
 
  
